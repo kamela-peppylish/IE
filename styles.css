@@ -1,3 +1,19 @@
+/*
+Theme Name: Twenty Fifteen Image Editing
+Theme URI: imageediting.com
+Author: Kamela Chowdhury
+Author URI: https://github.com/kamela-peppylish
+Version: 1.0
+Description: A customized version of Twenty Fifteen which allows to diplay content responsivly and best way to give user the best experince
+Tags: two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+
+Template: twentyfifteen
+*/
+/**
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Raleway', sans-serif;
+Common CSS */
 
 a:active, a:focus{outline : 1px solid rgba(139, 139, 139, 0.05)!important;}
 .loading{background: rgba(241,91,34,.5);}
