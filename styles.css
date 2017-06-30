@@ -636,6 +636,7 @@ top: 30%;
 .service-order-head{
     margin-bottom: 40px;
 }
+.service-order-details{height:100%}
 .service-order-head p{
     font-size: 20px;
     line-height: 36px;
@@ -859,7 +860,7 @@ height: 400px
 .services-gallery li,.footer,.service-order,#workflow,.features-item,.popup-box-content,.call-my-modal,.tutorial-vdo,
 .banner-content,.popup-box-img,.log-posts{position: relative;}
 .iso-pdf{background: url(images/ISO-certified-quality-image-editing.png) no-repeat;width: 172px;height: 182px;background-size: contain;position: fixed;bottom: 0;left: 5px;color: transparent;z-index: 100;}
-
+.iso-pdf:hover{color: transparent !important}
 /*MCP PAge */
 
 /*flow*/
@@ -885,7 +886,7 @@ body.modal-open div.modal-backdrop,div.modal div.modal-backdrop{z-index: 0;}
 /*min-height*/
 /*top*/
 .overlay,.price-tag,.price-tag-bg,.fixed-menu{ top: 0;}
-/*left*/
+/*left*/.service-order-img img{width:auto;height:100%;object-fit:cover}
 .popup-overlay,.service-order-img img,.overlay{  left: 0;}
 .price-tag-bg,.price-tag{ left: 10px;}
 /*bottom*/
@@ -1199,7 +1200,7 @@ margin: 15px auto !important;
   color: #fff !important;
 box-shadow: none;
 }
-.order-btn:hover{background: transparent!important;}
+
 .nav-order a{padding: 3px !important}
 .ie-pricing:hover .pricing-tbl-icon{background: url(https://imageediting.com/wp-content/uploads/2017/01/ie-happy-pricing.png) -81px 0px no-repeat;}
 .ie-pricing:hover .price-lbl-title{color:#f15b22}
@@ -1283,7 +1284,7 @@ h1,.order-btn,.banner-txt{font-family: 'Raleway', sans-serif;}
 /*color*/
 .categories .semi-title, .cat-item a{color:#fff;}
 li,p{color:#434244}
-.service-order-txt{color:#414042}
+.service-order-txt{line-height: 1.2rem;color:#414042}
 a,.top-menu,.menu-item a,.service-details-link,.page-header
 {color: #1a3a40;}
 
@@ -1603,16 +1604,16 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .ie-mission-icon{ background: url("images/about-us-icons-min.png") no-repeat -239px 0;}
 /* Services Order Section */
 .service-order{
-    height: 200px;
+    height: 202px;
     border:1px solid #dfdfdf;    
-   margin-bottom: 30px;
+  margin: 15px 0px;
 }
 #about-main .page-main-txt{text-align: justify;}
 #about-main.page-main{background: #f6f4f6;}
 
 .service-order-img{padding-left: 0;padding-right: 0;}
 .no-pad{padding-left: 0;padding-right: 0;}
-.service-order-img img{width:auto;height:168px;}
+
 .service-order-title{margin: 15px 0}
 .service-order-top{margin-top:0}
 .service-order .order-btn{
@@ -1620,6 +1621,9 @@ padding: 6px 20px;
     width: 160px;
     height: 35px;
     font-size: 17px;
+position: absolute;
+    bottom: 0;
+left:0
 }
 .service-order-action{padding:35px 48px 20px 30px}
 .service-order-action li{margin:15px 0;}
@@ -2235,9 +2239,7 @@ width: 60px;
     right: 0;
     margin: 0;
     }
- .service-order {
-    height: 210px;
-    }
+ 
     
 #mega-menu-inner{margin: 0 10px;padding: 40px;}
 #navcollapse .menu-item a{color: #fff;text-shadow: 1px 1px 0px #071416;    background: none;}
@@ -2306,7 +2308,7 @@ width:37px; height: 38px;
     margin: 0 auto;
 }
 .workflow-title { font-size: 62.22px;}
-.service-order-title { font-size: 1.5rem;}
+.service-order-title { font-size: 1.3rem;}
 /*.order-btn {padding: 6px 20px; width: 160px;}
 */.pricing-tbl-col .order-btn {
     padding: 10px 8px;
@@ -2492,8 +2494,8 @@ tnc-faq-ans{    padding: 10px;}
     font-size: 1.5rem;}
 .service-order-img img {
     width: auto;
-    height: 70px;
-    float: right;
+    height: auto;
+    
 }
 .workflow-block{
     height: auto;
@@ -2610,10 +2612,11 @@ bottom: 30px;
 
 
 .service-order {
-    height: 310px;}
+    height: auto;}
+.service-order .order-btn{position:relative}
 .service-order-img img {
     width: auto;
-    height: 70px;
+    height: auto;
     float: right;
 }
 .quote-btn, .acnt-btn{font-size: 16px}
